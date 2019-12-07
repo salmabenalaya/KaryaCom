@@ -9,5 +9,4 @@ public class Paper {
     public static void init(SignIn signIn) {
     }
 
-
 }
