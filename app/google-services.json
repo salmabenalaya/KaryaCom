@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "480299024064",
+    "firebase_url": "https://karyacom-c411a.firebaseio.com",
+    "project_id": "karyacom-c411a",
+    "storage_bucket": "karyacom-c411a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480299024064:android:ab903a6009d1c162bef725",
+        "android_client_info": {
+          "package_name": "com.example.karyacom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "480299024064-m2un1tqmi42pajqkj8k63mjh9658db6m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.karyacom",
+            "certificate_hash": "dd8441eea679cfbabb23e8fdef57467e010dfa6a"
+          }
+        },
+        {
+          "client_id": "480299024064-880iabsm75kqe42kfdhe4a8ef3g9i24a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBj5XkhQGWDdMGZr3mvnesLWJ5Ojw6hCM4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "480299024064-880iabsm75kqe42kfdhe4a8ef3g9i24a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
