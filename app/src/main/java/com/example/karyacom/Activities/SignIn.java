@@ -24,12 +24,16 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+
 import io.paperdb.Paper;
+
 public class SignIn extends AppCompatActivity {
+
     private EditText InputPhoneNumber, InputPassword;
     private Button LoginButton;
     private ProgressDialog loadingBar;
     private TextView AdminLink, NotAdminLink;
+
     private String parentDbName = "Users";
     private CheckBox chkBoxRememberMe;
 
@@ -44,21 +48,11 @@ public class SignIn extends AppCompatActivity {
         LoginButton = (Button) findViewById(R.id.login_btn);
         InputPassword = (EditText) findViewById(R.id.login_password_input);
         InputPhoneNumber = (EditText) findViewById(R.id.login_phone_number_input);
+        loadingBar = new ProgressDialog(this);
+
 
         chkBoxRememberMe = (CheckBox) findViewById(R.id.remember_me_chkb);
         Paper.init(this);
-        loadingBar = new ProgressDialog(this);
-        SharedPreferences preferences=getSharedPreferences("checkbox",MODE_PRIVATE);
-        String checkbox= preferences.getString("chkBoxRememberMe","");
-        if (checkbox.equals("true")) {
-            Intent intent=new Intent(SignIn.this, Categories.class);
-            startActivity(intent);
-        }
-        else if(checkbox.equals("false")) {
-            Toast.makeText(this,"please SignIn",Toast.LENGTH_SHORT).show();
-        }
-
-
 
 
         LoginButton.setOnClickListener(new View.OnClickListener() {
@@ -66,30 +60,6 @@ public class SignIn extends AppCompatActivity {
             public void onClick(View view)
             {
                 LoginUser();
-            }
-        });
-
-        AdminLink.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view)
-            {
-                Intent intent=new Intent(SignIn.this,Categories.class);
-                startActivity(intent);
-                LoginButton.setText("Login Admin");
-                AdminLink.setVisibility(View.INVISIBLE);
-                NotAdminLink.setVisibility(View.VISIBLE);
-                parentDbName = "Admins";
-            }
-        });
-
-        NotAdminLink.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view)
-            {
-                LoginButton.setText("Login");
-                AdminLink.setVisibility(View.VISIBLE);
-                NotAdminLink.setVisibility(View.INVISIBLE);
-                parentDbName = "Users";
             }
         });
     }
@@ -125,12 +95,12 @@ public class SignIn extends AppCompatActivity {
 
     private void AllowAccessToAccount(final String phone, final String password)
     {
-
         if(chkBoxRememberMe.isChecked())
         {
             Paper.book().write(Prevalent.UserPhoneKey, phone);
             Paper.book().write(Prevalent.UserPasswordKey, password);
         }
+
 
         final DatabaseReference RootRef;
         RootRef = FirebaseDatabase.getInstance().getReference();
@@ -175,24 +145,5 @@ public class SignIn extends AppCompatActivity {
 
             }
         });
-        chkBoxRememberMe.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if(compoundButton.isChecked()){
-                    SharedPreferences preferences=getSharedPreferences("checkbox",MODE_PRIVATE);
-                    SharedPreferences.Editor editor=preferences.edit();
-                    editor.putString("chkBoxRememberMe","true");
-                    editor.apply();
-                    Toast.makeText(SignIn.this,"Oncheked",Toast.LENGTH_SHORT).show();
-                }
-                else if (!compoundButton.isChecked()) {
-                    SharedPreferences preferences=getSharedPreferences("checkbox",MODE_PRIVATE);
-                    SharedPreferences.Editor editor=preferences.edit();
-                    editor.putString("chkBoxRememberMe","false");
-                    editor.apply();
-                    Toast.makeText(SignIn.this,"Unchecked",Toast.LENGTH_SHORT).show();
-                }
-            }
-
-        });
-    }}
+    }
+}
