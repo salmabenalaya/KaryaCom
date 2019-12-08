@@ -3,6 +3,7 @@ package com.example.karyacom.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -45,7 +46,8 @@ public class Formulaire extends AppCompatActivity {
                 member.setFamille(Fam);
                 RootRef.push().child("member1").setValue(member);
                 Toast.makeText(Formulaire.this,"insert seccefully",Toast.LENGTH_SHORT);
-
+                Intent intent = new Intent(Formulaire.this, MainActivity.class);
+                startActivity(intent);
             }
         });
     }

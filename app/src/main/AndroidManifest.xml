@@ -10,7 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Activities.discription2"></activity>
-        <activity android:name=".Activities.MainActivity" />
+        <activity android:name=".Activities.MainActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
         <activity android:name=".Activities.Fin" />
         <activity android:name=".Activities.discription8" />
         <activity android:name=".Activities.discription7" />
@@ -29,7 +35,9 @@
         </activity>
         <activity android:name=".Activities.SignIn" />
         <activity android:name=".Activities.SignUp" />
-        <activity android:name=".Activities.Home" />
+        <activity android:name=".Activities.Home">
+
+        </activity>
     </application>
 
 </manifest>

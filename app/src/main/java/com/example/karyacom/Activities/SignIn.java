@@ -122,7 +122,7 @@ public class SignIn extends AppCompatActivity {
                             Toast.makeText(SignIn.this, "logged in Successfully...", Toast.LENGTH_SHORT).show();
                             loadingBar.dismiss();
 
-                            Intent intent = new Intent(SignIn.this, Categories.class);
+                            Intent intent = new Intent(SignIn.this, MainActivity.class);
                             Prevalent.currentOnlineUser = usersData;
                             startActivity(intent);
                         }
