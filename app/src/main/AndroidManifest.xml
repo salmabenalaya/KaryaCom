@@ -9,7 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.forgotPass"></activity>
+        <activity android:name=".Activities.discription2"></activity>
+        <activity android:name=".Activities.MainActivity" />
+        <activity android:name=".Activities.Fin" />
+        <activity android:name=".Activities.discription8" />
+        <activity android:name=".Activities.discription7" />
+        <activity android:name=".Activities.discription6" />
+        <activity android:name=".Activities.discription5" />
+        <activity android:name=".Activities.discription4" />
+        <activity android:name=".Activities.discription3" />
+        <activity android:name=".Activities.discription1" />
+        <activity android:name=".Activities.forgotPass" />
         <activity android:name=".Activities.Formulaire">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,16 +27,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activities.Categories"></activity>
-        <activity android:name=".Activities.Description" />
-        <activity android:name=".Activities.SignIn">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter></activity>
+        <activity android:name=".Activities.SignIn" />
         <activity android:name=".Activities.SignUp" />
-        <activity android:name=".Activities.MainActivity"></activity>
+        <activity android:name=".Activities.Home" />
     </application>
 
 </manifest>

@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.example.karyacom.R;
 
-public class Description extends AppCompatActivity {
+public class discription3 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_description);
+        setContentView(R.layout.activity_discription3);
     }
 }
