@@ -46,7 +46,7 @@ public class Formulaire extends AppCompatActivity {
                 member.setFamille(Fam);
                 RootRef.push().child("member1").setValue(member);
                 Toast.makeText(Formulaire.this,"insert seccefully",Toast.LENGTH_SHORT);
-                Intent intent = new Intent(Formulaire.this, MainActivity.class);
+               Intent intent = new Intent(Formulaire.this, Fin.class);
                 startActivity(intent);
             }
         });
