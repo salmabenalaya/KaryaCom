@@ -48,6 +48,7 @@ public class SignIn extends AppCompatActivity {
         LoginButton = (Button) findViewById(R.id.login_btn);
         InputPassword = (EditText) findViewById(R.id.login_password_input);
         InputPhoneNumber = (EditText) findViewById(R.id.login_phone_number_input);
+
         loadingBar = new ProgressDialog(this);
 
 

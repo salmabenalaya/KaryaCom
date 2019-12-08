@@ -9,15 +9,17 @@
     tools:context=".Activities.SignIn"
     >
 
-
     <ImageView
         android:id="@+id/karya"
-        android:layout_width="365dp"
-        android:layout_height="295dp"
+        android:layout_width="303dp"
+        android:layout_height="135dp"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:src="@drawable/img" />
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:src="@drawable/karyacom" />
 
     <EditText
         android:id="@+id/login_phone_number_input"
@@ -92,6 +94,21 @@
         android:textAllCaps="false"
         android:textColor="#ffff"
         android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/Forgot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_btn"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:padding="17dp"
+        android:background="@drawable/custom_button"
+        android:textAllCaps="false"
+        android:textColor="#ffff"
+        android:textSize="18sp"
+        android:text="Forget Password" />
 
 
 </RelativeLayout>

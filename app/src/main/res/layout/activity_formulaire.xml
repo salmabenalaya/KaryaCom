@@ -4,28 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-   android:background="@drawable/background"
-    tools:context=".Activities.SignUp">
+    tools:context=".Activities.Formulaire"
+    android:background="@drawable/background">
 
-    <ImageView
-        android:id="@+id/register_applogo"
-        android:layout_width="303dp"
-        android:layout_height="135dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="67dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
-        android:src="@drawable/karyacom" />
-
+<ImageView
+android:id="@+id/register_applogo"
+android:layout_width="303dp"
+android:layout_height="135dp"
+android:layout_alignParentTop="true"
+android:layout_alignParentEnd="true"
+android:layout_alignParentRight="true"
+android:layout_marginTop="67dp"
+android:layout_marginEnd="60dp"
+android:layout_marginRight="60dp"
+android:src="@drawable/karyacom" />
     <EditText
-        android:id="@+id/register_username_input"
+        android:id="@+id/txtname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/register_applogo"
         android:layout_marginLeft="15dp"
-        android:layout_marginTop="109dp"
+        android:layout_marginTop="7dp"
         android:layout_marginRight="15dp"
         android:hint="Name"
         android:inputType="text"
@@ -33,12 +32,11 @@
         android:textColor="@color/colorPrimaryDark"
         android:textColorHint="@color/colorPrimaryDark"
         android:textSize="19sp" />
-
     <EditText
-        android:id="@+id/register_phone_number_input"
+        android:id="@+id/txtphone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/register_username_input"
+        android:layout_below="@+id/txtname"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="14dp"
         android:layout_marginRight="15dp"
@@ -49,29 +47,40 @@
         android:textColorHint="@color/colorPrimaryDark"
         android:textSize="19sp" />
 
-
     <EditText
-        android:id="@+id/register_password_input"
+        android:id="@+id/txtlocation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/register_phone_number_input"
+        android:layout_below="@+id/txtphone"
         android:padding="20dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:layout_marginTop="6dp"
-        android:hint="Password"
-        android:inputType="textPassword"
+        android:hint="Periode de location"
         android:textColor="@color/colorPrimaryDark"
         android:textColorHint="@color/colorPrimaryDark"
         android:textSize="19sp"
-        />
+        android:inputType="date" />
 
-
-    <Button
-        android:id="@+id/register_btn"
+    <EditText
+        android:id="@+id/txtFamille"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/register_password_input"
+        android:layout_below="@+id/txtlocation"
+        android:padding="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="6dp"
+        android:hint="Nombre de famille"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="19sp"
+        android:inputType="number" />
+    <Button
+        android:id="@+id/btnsave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtFamille"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
@@ -79,8 +88,7 @@
         android:textAllCaps="false"
         android:textSize="18sp"
         android:background="@drawable/custom_button"
-        android:text="Create Account"
-        android:textColor="@android:color/white"
-        />
+        android:text="Register"
+        android:textColor="@android:color/white"/>
 
 </RelativeLayout>

@@ -9,22 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.Description"></activity>
-        <activity android:name=".Activities.Categories">
-
-        </activity>
-        <activity android:name=".Activities.SignIn">
-
-        </activity>
-        <activity android:name=".Activities.SignUp" />
-        <activity android:name=".Activities.MainActivity">
+        <activity android:name=".Activities.forgotPass"></activity>
+        <activity android:name=".Activities.Formulaire">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
+        <activity android:name=".Activities.Categories"></activity>
+        <activity android:name=".Activities.Description" />
+        <activity android:name=".Activities.SignIn">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter></activity>
+        <activity android:name=".Activities.SignUp" />
+        <activity android:name=".Activities.MainActivity"></activity>
     </application>
 
 </manifest>
