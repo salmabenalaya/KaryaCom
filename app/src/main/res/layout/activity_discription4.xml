@@ -36,14 +36,14 @@
         android:textSize="20dp"
         android:textStyle="italic" />
 
+
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="420dp"
-        android:layout_height="294dp"
+        android:layout_height="193dp"
         app:srcCompat="@drawable/maison4"
         tools:layout_editor_absoluteX="-99dp"
         tools:layout_editor_absoluteY="57dp" />
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -183,7 +183,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#009680"
-            android:text="Louer"
+            android:text="@string/louer"
             android:textColor="#000000" />
     </LinearLayout>
 

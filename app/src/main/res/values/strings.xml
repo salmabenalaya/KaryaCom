@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">KaryaCom</string>
+    <string name="se_connecter">Sign In</string>
+    <string name="creer">Sign Up</string>
+    <string name="nom">first name</string>
+    <string name="prenom">last name</string>
+    <string name="telephone">Number phone</string>
+    <string name="Nombre_Famille">Number family</string>
+    <string name="Periode_location">Rental period</string>
+    <string name="louer">Rend</string>
+    <string name="Ajouter">Register</string>
+    <string name="mot_de_passe_oublier">forgot Password</string>
+
 
 </resources>

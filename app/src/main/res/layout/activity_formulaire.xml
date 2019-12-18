@@ -18,6 +18,7 @@ android:layout_marginTop="67dp"
 android:layout_marginEnd="60dp"
 android:layout_marginRight="60dp"
 android:src="@drawable/karyacom" />
+
     <EditText
         android:id="@+id/txtname"
         android:layout_width="match_parent"
@@ -26,12 +27,13 @@ android:src="@drawable/karyacom" />
         android:layout_marginLeft="15dp"
         android:layout_marginTop="7dp"
         android:layout_marginRight="15dp"
-        android:hint="Name"
+        android:hint="@string/nom"
         android:inputType="text"
         android:padding="20dp"
         android:textColor="@color/colorPrimaryDark"
         android:textColorHint="@color/colorPrimaryDark"
         android:textSize="19sp" />
+
     <EditText
         android:id="@+id/txtphone"
         android:layout_width="match_parent"
@@ -40,7 +42,7 @@ android:src="@drawable/karyacom" />
         android:layout_marginLeft="15dp"
         android:layout_marginTop="14dp"
         android:layout_marginRight="15dp"
-        android:hint="Phone Number"
+        android:hint="@string/telephone"
         android:inputType="number"
         android:padding="20dp"
         android:textColor="@color/colorPrimaryDark"
@@ -52,43 +54,44 @@ android:src="@drawable/karyacom" />
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtphone"
-        android:padding="20dp"
         android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
         android:layout_marginTop="6dp"
-        android:hint="Periode de location"
+        android:layout_marginRight="15dp"
+        android:hint="@string/Periode_location"
+        android:inputType="date"
+        android:padding="20dp"
         android:textColor="@color/colorPrimaryDark"
         android:textColorHint="@color/colorPrimaryDark"
-        android:textSize="19sp"
-        android:inputType="date" />
+        android:textSize="19sp" />
 
     <EditText
         android:id="@+id/txtFamille"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtlocation"
-        android:padding="20dp"
         android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
         android:layout_marginTop="6dp"
-        android:hint="Nombre de famille"
+        android:layout_marginRight="15dp"
+        android:hint="@string/Nombre_Famille"
+        android:inputType="number"
+        android:padding="20dp"
         android:textColor="@color/colorPrimaryDark"
         android:textColorHint="@color/colorPrimaryDark"
-        android:textSize="19sp"
-        android:inputType="number" />
+        android:textSize="19sp" />
+
     <Button
         android:id="@+id/btnsave"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtFamille"
-        android:layout_marginTop="5dp"
         android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
         android:layout_marginRight="15dp"
-        android:padding="17dp"
-        android:textAllCaps="false"
-        android:textSize="18sp"
         android:background="@drawable/custom_button"
-        android:text="Register"
-        android:textColor="@android:color/white"/>
+        android:padding="17dp"
+        android:text="@string/Ajouter"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
 
 </RelativeLayout>

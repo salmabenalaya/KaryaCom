@@ -90,7 +90,7 @@
         android:layout_marginRight="15dp"
         android:background="@drawable/custom_button1"
         android:padding="17dp"
-        android:text="Login"
+        android:text="@string/se_connecter"
         android:textAllCaps="false"
         android:textColor="#ffff"
         android:textSize="18sp" />
@@ -103,12 +103,12 @@
         android:layout_marginLeft="15dp"
         android:layout_marginTop="5dp"
         android:layout_marginRight="15dp"
-        android:padding="17dp"
         android:background="@drawable/custom_button"
+        android:padding="17dp"
+        android:text="@string/mot_de_passe_oublier"
         android:textAllCaps="false"
         android:textColor="#ffff"
-        android:textSize="18sp"
-        android:text="Forget Password" />
+        android:textSize="18sp" />
 
 
 </RelativeLayout>

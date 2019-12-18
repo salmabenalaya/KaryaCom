@@ -27,7 +27,7 @@
         android:layout_marginLeft="15dp"
         android:layout_marginTop="109dp"
         android:layout_marginRight="15dp"
-        android:hint="Name"
+        android:hint="@string/nom"
         android:inputType="text"
         android:padding="20dp"
         android:textColor="@color/colorPrimaryDark"

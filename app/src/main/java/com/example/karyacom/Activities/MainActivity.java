@@ -2,9 +2,11 @@ package com.example.karyacom.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -29,37 +31,37 @@ public class MainActivity extends AppCompatActivity {
         listView.setAdapter(customAdapter);
 
         //getById description
-       /*listView.setOnClickListener(new AdapterView.OnItemClickListener(){
+       listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position == 1){
-                    startActivity(new Intent(MainActivity.this,description1.class));
+                    startActivity(new Intent(MainActivity.this,discription1.class));
                 }
                 if (position == 2){
-                    startActivity(new Intent(MainActivity.this,desciption2.class));
+                    startActivity(new Intent(MainActivity.this,discription2.class));
                 }
                 if (position == 3){
-                    startActivity(new Intent(MainActivity.this,description3.class));
+                    startActivity(new Intent(MainActivity.this,discription3.class));
                 }
                 if (position == 4){
-                    startActivity(new Intent(MainActivity.this,description4.class));
+                    startActivity(new Intent(MainActivity.this,discription4.class));
                 }
                 if (position == 5){
-                    startActivity(new Intent(MainActivity.this,description5.class));
+                    startActivity(new Intent(MainActivity.this,discription5.class));
                 }
                 if (position == 6){
-                    startActivity(new Intent(MainActivity.this,description6.class));
+                    startActivity(new Intent(MainActivity.this,discription6.class));
                 }
                 if (position == 7){
-                    startActivity(new Intent(MainActivity.this,description7.class));
+                    startActivity(new Intent(MainActivity.this,discription7.class));
                 }
                 if (position == 8){
-                    startActivity(new Intent(MainActivity.this,description8.class));
+                    startActivity(new Intent(MainActivity.this,discription8.class));
                 }
 
             }
-        });*/
+        });
     }
 
     class CustomAdapter extends BaseAdapter {

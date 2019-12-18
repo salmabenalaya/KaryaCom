@@ -4,9 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/karyacom"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/karyacom"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Activities.discription2"></activity>
@@ -20,18 +20,19 @@
         <activity android:name=".Activities.discription5" />
         <activity android:name=".Activities.discription4" />
         <activity android:name=".Activities.discription3" />
-        <activity android:name=".Activities.discription1" />
+        <activity android:name=".Activities.discription1"/>
         <activity android:name=".Activities.forgotPass" />
         <activity android:name=".Activities.Formulaire">
+
+        </activity>
+        <activity android:name=".Activities.SignIn" />
+        <activity android:name=".Activities.SignUp" />
+        <activity android:name=".Activities.Home">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".Activities.SignIn" />
-        <activity android:name=".Activities.SignUp" />
-        <activity android:name=".Activities.Home">
 
         </activity>
     </application>
